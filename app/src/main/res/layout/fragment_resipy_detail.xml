@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.detailPage.ResipyDetail">
+
+
+    <ImageView
+        android:id="@+id/imageViewDetail"
+        android:layout_width="302dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recipyNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Resipy Name"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDetail"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDetail"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDetail" />
+
+    <TextView
+        android:id="@+id/recipyCaloryDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="ResipyCalori"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDetail"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDetail"
+        app:layout_constraintTop_toBottomOf="@+id/recipyNameText" />
+
+    <TextView
+        android:id="@+id/reciptCarbonhydratDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Recipy Carbonhidrat"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/recipyNameText"
+        app:layout_constraintStart_toStartOf="@+id/recipyNameText"
+        app:layout_constraintTop_toBottomOf="@+id/recipyCaloryDetail" />
+
+    <TextView
+        android:id="@+id/recipyProteinDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Recipy Protein"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/recipyNameText"
+        app:layout_constraintStart_toStartOf="@+id/recipyNameText"
+        app:layout_constraintTop_toBottomOf="@+id/reciptCarbonhydratDetail" />
+
+    <TextView
+        android:id="@+id/recipyFatDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Recipy Fat"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/recipyNameText"
+        app:layout_constraintStart_toStartOf="@+id/recipyNameText"
+        app:layout_constraintTop_toBottomOf="@+id/recipyProteinDetail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
